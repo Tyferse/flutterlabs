@@ -11,7 +11,7 @@ import 'package:get/get.dart';
 class FirebaseFunctions {
   final FirebaseFirestore _firebase_firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirebaseStorage _firebase_storage = FirebaseStorage.instanceFor(bucket: "gs://flutter-project-342f8.appspot.com");
+  final FirebaseStorage _firebase_storage = FirebaseStorage.instanceFor(bucket: "YOUR_BUCKET_URL");
   bool _has_more_data = true;
   DocumentSnapshot? _last_document;
   final int _document_limit = 6;
