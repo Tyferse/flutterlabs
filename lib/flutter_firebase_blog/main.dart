@@ -12,11 +12,11 @@ void main() async {
   await Firebase.initializeApp(
       // name: "flutter_firebase_blog",
       options: const FirebaseOptions(
-          apiKey: "AIzaSyBYu9qpSsOLKwDQWIh-31r-G1bxuzfJPsU",
-          appId: "1:811245872810:android:4cf1228ea1f7f8810cd2d3",
-          messagingSenderId: "811245872810",
-          projectId: "flutter-project-342f8",
-          storageBucket: "flutter-project-342f8.appspot.com"));
+          apiKey: "Your_API_KEY",
+          appId: "YOUR_APP_ID",
+          messagingSenderId: "YOUR_MESSAGE_SENDER_ID",
+          projectId: "YOUR_PROJECT_ID",
+          storageBucket: "YOUR_BUCKET_URL"));
   await FirebaseAppCheck.instance.activate(
     webProvider: ReCaptchaV3Provider('recaptcha-v3-site-key'),
     androidProvider: AndroidProvider.debug,
